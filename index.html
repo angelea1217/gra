@@ -1,42 +1,148 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Tiramisu | Angelea Navarro, 2025</title>
+  <title>index.html</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap" rel="stylesheet">
+  <style>
+	 body {
+		 background-image: url("halloween-pattern-background-design_1048-16899.jpg");
+	  }
+    @keyframes drip {
+      0% {
+        text-shadow: 0 0 0 red;
+      }
+      50% {
+        text-shadow: 0 5px 10px red;
+      }
+      100% {
+        text-shadow: 0 10px 20px red;
+      }
+    }
+
+    @keyframes bleed {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(20px); opacity: 0; }
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      
+    }
+
+    .invitation-box {
+      background-color:rgba(255,142,44,0.80);
+      border: 5px dashed #000;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+	  margin: auto;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .invitation-box:hover {
+      box-shadow: 0 0 30px 
+    }
+
+    h1 {
+      color: #000000;
+      font-family: "Metal Mania", system-ui;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    h1:hover {
+      color: #ff6600;
+      text-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600;
+      transition: all 0.3s ease-in-out;
+    }
+
+    p {
+      font-family: "Creepster", system-ui;
+      font-size: 50px;
+      color: #8B0000; /* dark blood red */
+      margin: 0.5em 0;
+      animation: drip 2s infinite ease-in-out;
+      position: relative;
+	  text-align: center;
+		
+	
+    }
+
+    p::after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 20px;
+      background: red;
+      margin: 0 auto;
+      border-radius: 50;
+      animation: bleed 1.5s infinite ease-in-out;
+    }
+	  .date {
+		 font-family: "Metal Mania", system-ui;
+		  color: rgba(0,0,0,1.00);
+		  font-size: 2rem;
+		  animation: none;
+		  text-shadow: none;
+		  position: static;
+	  }
+	  .date:after{
+		 content: none; /* removes bleed effect */ 
+	  }
+	  .invitation-image {
+  max-width: 120px;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+	  
+	footer p {
+      font-size: 0.8rem;
+      font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+      color: #FFFFFF;
+      animation: none;
+      text-shadow: none;
+      position: static; 
+    }
+	 body {
+		 display: flex;
+		 flex-direction: column;
+		 justify-content: space-between;
+		 min-height: 100vh;
+	  }
+
+    footer p::after {
+  content: none; /* removes the dripping effect */
+		}
+     
+  </style>
 </head>
+<main>
+	
+	</main>
 <body>
-<wrapper>
-  <header> <img class="logo" src="la-ducle-logo.png" />
-    <h1>La Dulce Vida</h1>
-  </header>
-  <main> <img class="banner" src="Authentic-Tiramisu-Recipe-17-1-500x500.jpg"/>
-    <h2>Tiramisu</h2>
-    <p>&nbsp; We always want to inspire people for creating recipes for baking. La Dulce Vida will always provide for you the valuable directions for a tasty treat.&nbsp; &nbsp; &nbsp; </p>
-    <section>
-      <h3>Ingredients</h3>
-      <ul>
-        <li>Ladyfingers</li>
-        <li>Mascarpone</li>
-        <li>Coffee</li>
-        <li>Heavy Whipped Cream</li>
-        <li>Granulated Sugar</li>
-        <li>Cocoa Powder</li>
-      </ul>
-    </section>
-    <section>
-      <h3> Steps</h3>
-      <ol>
-        <li> Mix creamy filling. Beat the mascarpone, cream, sugar, and vanilla together until stiff peaks.</li>
-        <li> Dip lady fingers. Add the espresso and liqueur (if using) to a shallow bowl and dip the lady fingers on both sides (don&rsquo;t let them soak–just a quick dip!)</li>
-        <li>Layer mascarpone. Smooth a layer of the mascarpone/whipped cream mixture on top of the lady fingers.</li>
-        <li>Repeat. Add another layer of lady fingers (dipped in coffee and liqueur) and another layer of cheese mixture. Dust with cocoa powder.</li>
-      </ol>
-    </section>
-  </main>
-  <footer>
+  <div class="invitation-box">
+    <h1>You have been Invited...</h1>
+    <p>To the halloween party</p>
+    <p>if you dare to join</p>
+	<p class="date"> October 25th, 8:00 pm, 750 est. Mowry Court homstead fl.</p>
+	<p class="date">
+	  You must wear a costume before entering!!
+	  </p>
+	  <img src="5841645.png" alt="ghost img" class="invitation-image">
+</div>
+	
+	<footer>
     <p> &copy; 2025, Angelea Navarro</p>
     <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category</p>
-  </footer>
-</wrapper>
+	</footer>
 </body>
 </html>
