@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TuneFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      background-image: url("../gra1750p5angelean2025/music-icons-seamless-pattern-25831220.webp");
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    .mobile-container {
+      max-width: 480px;
+      margin: auto;
+      background-color: #368E8F;
+      color: white;
+      border-radius: 10px;
+      padding-bottom: 40px;
+    }
+
+    .topnav {
+      background-color: rgba(144, 218, 219, 0.58);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .topnav #myLinks {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .topnav a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      text-align: center;
+    }
+
+    .topnav a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .active {
+      background-color: #270A0B;
+      color: white;
+    }
+
+    .logo-container {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 80%;
+      height: auto;
+      display: inline-block;
+    }
+
+    .nav-tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #FFFFFF;
+      padding: 10px 0;
+      border-top: 4px solid #368E8F;
+      border-bottom: 4px solid #368E8F;
+    }
+
+    .nav-tabs a {
+      color: #270A0B;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0;
+      padding: 10px 20px;
+      border: 2px solid #368E8F;
+      border-radius: 8px;
+      width: 80%;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+
+    .nav-tabs a:hover {
+      background-color: #368E8F;
+      color: white;
+    }
+
+    .section-line {
+      border: none;
+      height: 2px;
+      background-color: white;
+      margin: 20px 16px;
+      border-radius: 2px;
+    }
+
+    .honk-heading {
+      font-family: 'Honk', system-ui;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "MORF" 15, "SHLN" 50;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .track-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .track-box {
+      width: 180px;
+      margin: 36px 0;
+      text-align: center;
+    }
+
+    .track {
+      width: 180px;
+      height: 180px;
+      border: 2px solid white;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .track1 {
+      background-image: url("../gra1750p5angelean2025/IMG_3189.png");
+    }
+
+    .track2 {
+      background-image: url("../gra1750p5angelean2025/artworks-SAczGm57yceTdbVL-HyzCdw-t500x500.jfif");
+    }
+
+    .track3 {
+      background-image: url("../gra1750p5angelean2025/ab67616d0000b27335ea219ce47813b5e2dc3745.jfif");
+    }
+
+    .caption {
+      font-size: 18px;
+      margin-top: 12px;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .contact {
+      padding: 20px;
+    }
+
+    .contact h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 97%;
+      padding: 4px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      width: 100%;
+      padding: 10px;
+      background-color: #270A0B;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #3A0F10;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 12px;
+      text-align: center;
+      background-color: #270A0B;
+      color: white;
+      border-top: 2px solid white;
+    }
+
+    @media (min-width:768px) {
+      .mobile-container {
+        max-width: 1000px;
+        padding: 40px;
+        border-radius: 20px;
+      }
+
+      .nav-tabs {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .nav-tabs a {
+        width: auto;
+        margin: 0 10px;
+        font-size: 18px;
+        padding: 12px 24px;
+      }
+
+      .track-container {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .track-box {
+        width: 220px;
+        margin: 20px;
+      }
+
+      .track {
+        width: 220px;
+        height: 220px;
+      }
+
+      .caption {
+        font-size: 20px;
+      }
+
+      .contact input,
+      .contact textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .contact button {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="mobile-container">
+
+  <div class="topnav">
+    <a href="#home" class="active">♫&nbsp;</a>
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="logo-container">
+    <img src="../gra1750p5angelean2025/proj_05_logo.png" alt="TuneFlow Logo" class="logo">
+  </div>
+
+  <div class="nav-tabs">
+    <a href="#about">About Us!</a>
+    <a href="#profile">Profile</a>
+    <a href="#genre">Music Genres</a>
+  </div>
+
+  <hr class="section-line">
+
+  <h2 class="honk-heading">This Week's Music Streams!</h2>
+
+  <div class="track-container">
+    <div class="track-box">
+      <div class="track track1"></div>
+      <div class="caption">
+        "The Fate of Ophelia"<br>– Taylor Swift<br><strong>379 Million streams</strong>
+      </div>
+    </div>
+
+    <div class="track-box">
+      <div class="track track2"></div>
+      <div class="caption">
+        "Golden"<br>– Huntrix<br><strong>932 Million streams</strong>
+      </div>
+    </div>
+
+    <div class="track-box">
+      <div class="track track3"></div>
+      <div class="caption">
+        "I'm the Problem"<br>– Morgan Wallen<br><strong>3.2 Billion streams</strong>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-line">
+
+  <div class="contact">
+    <h2>Contact Us!</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+    </form>
+  </div>
+
+</div> <!-- END of .mobile-container -->
+
+<footer>
+  <p>&copy; 2025, Angelea Navarro</p>
+  <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
+
+</body>
+</html>
